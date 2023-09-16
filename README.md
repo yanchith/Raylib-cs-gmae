@@ -19,7 +19,9 @@ You may `dotnet run` and get an error that looks like this:
 Unhandled exception. System.DllNotFoundException: Unable to load DLL 'raylib' or one of its dependencies: The specified module could not be found. (0x8007007E)
 ```
 
-In this case, copy the `raylib.dll` (on Windows) or `libraylib.dylib` (on macOS) from the runtimes
-subdirectory in the build directory to the build directory itself, right next to your executable.
+In this case, copy the `raylib.dll` (on Windows) from the runtimes subdirectory in the build
+directory to the build directory itself, right next to your executable.
+
+On macOS the workaround doesn't work. Stay tuned.
 
 Happy coding!
