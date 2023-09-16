@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- This includes Raylib-cs from the sibling directory to our project -->
+    <ProjectReference Include="../Raylib-cs/Raylib-cs/Raylib-cs.csproj" />
+
+    <!-- TODO(yan): For some reason, Raylib-cs can't find the native library under
+         runtimes/{platform}/native/raylib.dll, in the build directory, but it can find it, if it is
+         right next to the executable. Insert a platform specific copy operation here. -->
+  </ItemGroup>
+
+</Project>
